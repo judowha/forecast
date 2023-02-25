@@ -1,8 +1,11 @@
 package com.example.myapplication.Model;
 
+import com.google.gson.JsonObject;
+
 import java.util.ArrayList;
 
 public class CityWeather {
+    private JsonObject jsonObject;
     private Coord coord;
     private ArrayList<Weather> weather;
     private String base;
@@ -95,5 +98,13 @@ public class CityWeather {
                 ", name='" + name + '\'' +
                 ", cod=" + cod +
                 '}';
+    }
+
+    public JsonObject getJsonObject() {
+        return jsonObject;
+    }
+
+    public void setJsonObject(JsonObject jsonObject) {
+        this.jsonObject = jsonObject;
     }
 }

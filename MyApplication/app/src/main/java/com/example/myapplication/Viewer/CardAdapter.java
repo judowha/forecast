@@ -42,18 +42,22 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.WeatherHolder>
     }
 
     class WeatherHolder extends RecyclerView.ViewHolder{
-        private TextView txtCityCard, txtWeatherCard, txtTimeCard;
+        private TextView txtCityCard, txtWeatherCard, txtTimeCard, txtTempCard, txtHumidityCard;
         WeatherHolder(View itemView){
             super(itemView);
             txtCityCard = itemView.findViewById(R.id.txtCityCard);
             txtWeatherCard = itemView.findViewById(R.id.txtWeatherCard);
             txtTimeCard = itemView.findViewById(R.id.txtTimeCard);
+            txtTempCard = itemView.findViewById(R.id.txtTempCard);
+            txtHumidityCard = itemView.findViewById(R.id.txtHumidityCard);
         }
 
         void setDetails(WeatherCards weatherCards){
-            txtCityCard.setText(String.format("City is: %s", weatherCards.getCity()));
-            txtWeatherCard.setText(String.format("weather is: %s", weatherCards.getWeather()));
-            txtTimeCard.setText(String.format("Time is: %s", weatherCards.getTime()));
+            txtCityCard.setText(String.format("City: %s", weatherCards.getCity()));
+            txtWeatherCard.setText(String.format("weather: %s", weatherCards.getWeather()));
+            txtTimeCard.setText(String.format("Time: %s", weatherCards.getTime()));
+            txtTempCard.setText(String.format("Temp: %s", weatherCards.getTemp()));
+            txtHumidityCard.setText(String.format("Humidity: %s", weatherCards.getHumidity()));
         }
     }
 

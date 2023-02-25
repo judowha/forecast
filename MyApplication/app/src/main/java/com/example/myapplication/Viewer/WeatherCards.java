@@ -4,11 +4,15 @@ public class WeatherCards {
     private String city;
     private String weather;
     private String time;
+    private String temp;
+    private String humidity;
 
-    public WeatherCards(String city, String weather, String time) {
+    public WeatherCards(String city, String weather, String time, String temp, String humidity) {
         this.city = city;
         this.weather = weather;
         this.time = time;
+        this.temp = temp;
+        this.humidity = humidity;
     }
 
     public String getCity() {
@@ -33,5 +37,13 @@ public class WeatherCards {
 
     public String getTime() {
         return time;
+    }
+
+    public String getHumidity() {
+        return humidity;
+    }
+
+    public String getTemp() {
+        return temp;
     }
 }

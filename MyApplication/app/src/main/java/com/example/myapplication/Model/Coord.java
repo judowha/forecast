@@ -1,10 +1,10 @@
 package com.example.myapplication.Model;
 
 public class Coord {
-    private int lon;
-    private int lat;
+    private double lon;
+    private double lat;
 
-    public Coord(int lon, int lat) {
+    public Coord(double lon, double lat) {
         this.lon = lon;
         this.lat = lat;
     }

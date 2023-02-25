@@ -28,6 +28,18 @@
             android:id="@+id/txtTimeCard"
             android:padding="1dp"
             android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTempCard"
+            android:padding="1dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtHumidityCard"
+            android:padding="1dp"
+            android:textColor="@color/black"/>
 
     </LinearLayout>
 
