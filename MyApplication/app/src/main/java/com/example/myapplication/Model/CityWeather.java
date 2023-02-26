@@ -5,7 +5,7 @@ import com.google.gson.JsonObject;
 import java.util.ArrayList;
 
 public class CityWeather {
-    private JsonObject jsonObject;
+
     private Coord coord;
     private ArrayList<Weather> weather;
     private String base;
@@ -21,7 +21,15 @@ public class CityWeather {
     private Long id;
     private String name;
     private int cod;
+    private boolean isCurrentLocation;
 
+    public void setCurrentLocation(boolean currentLocation) {
+        isCurrentLocation = currentLocation;
+    }
+
+    public boolean isCurrentLocation() {
+        return isCurrentLocation;
+    }
 
     public Coord getCoord() {
         return coord;
@@ -80,6 +88,7 @@ public class CityWeather {
     }
 
 
+
     @Override
     public String toString() {
         return "CityWeather{" +
@@ -100,11 +109,4 @@ public class CityWeather {
                 '}';
     }
 
-    public JsonObject getJsonObject() {
-        return jsonObject;
-    }
-
-    public void setJsonObject(JsonObject jsonObject) {
-        this.jsonObject = jsonObject;
-    }
 }

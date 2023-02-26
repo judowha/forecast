@@ -15,8 +15,7 @@ public interface WeatherAPIController {
                                                     @Query("appid") String key);
 
     @GET("data/2.5/weather")
-    Call<JsonObject> fetchWeatherResultByCity(@Query("lat") double lat,
-                                                   @Query("lon") double lon,
+    Call<JsonObject> fetchWeatherResultByCity(@Query("q") String city,
                                                    @Query("appid") String key);
 
 
