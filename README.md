@@ -6,7 +6,7 @@ The Application implement following functionalities:
 * Store the above information in App-specific storage
 * When no network avaialbe, read stored information from the storage and indicates that current network status
 * Refresh the view once the user connects to the network
-* When the use has network connection, refreshes the data every 10 minutes
+* When the user has network connection, refreshes the data every 10 minutes
 
 
 The whole project is done based on MVC pattern(mostly):
