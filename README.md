@@ -1,5 +1,13 @@
 # forecast
-This is my first time to do android development so many things could be optimized  
+This is my first time to do android development so many things could be optimized 
+
+The Application implement following functionalities:
+* Retrieve weather from openWeather API for user's current location and the following citys: New York, Singapore, Mumbai, Delhi, Sydney, Melbourne
+* Store the above information in App-specific storage
+* When no network avaialbe, read stored information from the storage and indicates that current network status
+* Refresh the view once the user connects to the network
+* When the use has network connection, refreshes the data every 10 minutes
+
 
 The whole project is done based on MVC pattern(mostly):
 * AppActivity is the only activity runs in the application. It has a timer task to call various controllers to retrieve GPS data, request weather data from openWeather, and then update these information to Viewer.
