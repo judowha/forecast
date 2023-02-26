@@ -16,6 +16,6 @@ The whole project is done based on MVC pattern(mostly):
 GPScontroller is used to get user current location.  
 The GPScontroller will call RetrieveDataFromAPIController to retrieve weahter information of the city or user current location from openWeather API.  
 WeatherAPIController is used in RetrieveDataFromAPIController. It will send HTTP request to openWeather API and get the jsonobject back.   
-After the RetrieveDataFromAPIController retrieves weather information, it will call IOController to write the result to Internal storage. 
+After the RetrieveDataFromAPIController retrieves weather information, it will call IOController to write the result to App-specific storage. 
 The ViewController will used to update the APP view. It will be called when the application starts to load stored data from the storage, and when the new weather information is retrieved from API  
 * Viewer package contains view classes. The overall view reuses the card view.
